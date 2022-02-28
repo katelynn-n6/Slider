@@ -29,6 +29,7 @@ public class PlayerInventory : MonoBehaviour
 
         collectibles.Add(collectible.GetCollectibleData());
         OnPlayerGetCollectible?.Invoke(instance, new InventoryEvent {collectible = collectible});
+
     }
 
     public static void AddItem(Item item)
